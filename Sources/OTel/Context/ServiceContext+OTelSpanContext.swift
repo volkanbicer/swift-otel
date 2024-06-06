@@ -15,7 +15,7 @@ import ServiceContextModule
 
 extension ServiceContext {
     /// The span context.
-    public internal(set) var spanContext: OTelSpanContext? {
+    public var spanContext: OTelSpanContext? {
         get {
             self[SpanContextKey.self]
         }
